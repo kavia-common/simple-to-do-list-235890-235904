@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
+import { logThankYou } from "./thankyou";
 
 export default function App() {
   useEffect(() => {
     // Runs once on initial app load (mount).
     console.log("Welcome to the Simple To-Do List app!");
+    logThankYou();
   }, []);
 
   return (
